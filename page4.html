@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('reg.jpeg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .form-container {
+            width: 350px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: cyan; /* Heading color set to black */
+            font-weight: 900;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+            width: 85%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 18px;
+            color: black; /* Text color set to black */
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .registration-success {
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form action="captcha.html" method="get">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your phone number" required>
+            <input type="text" placeholder="Enter your address" required>
+            <input type="date" placeholder="Enter your date of birth" required>
+            <input type="password" placeholder="Enter your password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="registration-success" id="registrationStatus"></div>
+    </div>
+
+    <script>
+        function handleFormSubmit() {
+            var registrationStatus = document.getElementById("registrationStatus");
+            registrationStatus.textContent = "Registration Successful!";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Con Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('animecon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+        }
+
+        header, section#about {
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .anime-image {
+            width: 150px;
+            height: 150px; /* Set the height to match the width for a circular shape */
+            border-radius: 50%;
+            margin-bottom: 20px; /* Optional: Add some space between the logo and the header */
+            transition: transform 0.3s; /* Add transition for smooth scaling effect */
+        }
+
+        .anime-image:hover {
+            transform: scale(1.1); /* Scale up the logo on hover */
+        }
+
+        /* Add this CSS for hover effect on navigation links */
+        nav a:hover {
+            color: yellow; /* Change the color when hovered */
+        }
+    </style>
+</head>
+
+<body>
+    <img class="anime-image" src="logo.jpg" alt="Anime Con Logo">
+    <header>
+        <h1>Welcome to Anime Con 2023</h1>
+    </header>
+    <nav>
+        <a href="page2.html">Events</a>
+        <a href="page3.html">Discount Calculator</a>
+        <a href="page4.html">Registration</a>
+        <a href="page5.html">Tickets</a>
+    </nav>
+    <section id="about">
+        <h2>About Anime Con 2023</h2>
+        <p>Join us for Anime Con 2023, the ultimate celebration of anime, manga, and Japanese pop culture! Immerse yourself in a world of cosplays, panels, screenings, and much more. Dive into the captivating universe of your favorite anime series, meet fellow enthusiasts, and engage in lively discussions with industry professionals. Experience the thrill of exclusive merchandise stalls, interactive workshops, and gaming zones that will transport you to the heart of Japanese entertainment. This event promises unforgettable moments, where creativity and passion collide, making Anime Con 2023 an unmissable spectacle for anime lovers of all ages!</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .event {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s; /* Add a smooth transition effect */
+        }
+
+        .event:hover {
+            transform: scale(1.05); /* Scale up the event on hover */
+        }
+
+        .cosplay-event {
+            background-image: url('ds.jpg'); /* Path to your specific cosplay background image */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Text color on the special background */
+        }
+
+        .food-stalls-event {
+            background-image: url('foodstalls.jpg'); /* Path to your specific food stalls background image */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Text color on the special background */
+        }
+
+        .weebs-event {
+            background-image: url('weebbs.jpeg'); /* Path to your specific weebs poster making background image */
+            background-size: cover;
+            background-position: center;
+            color:white; /* Text color on the special background */
+        }
+
+        .event h2 {
+            color: goldenrod;
+        }
+
+        .event-details {
+            margin-top: 10px;
+        }
+
+        .event-details p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="event cosplay-event">
+        <h2>Cosplay Event</h2>
+        <div class="event-details">
+            <p><strong>Date:</strong> October 15, 2023</p>
+            <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+            <p><strong>Rules:</strong></p>
+            <ul>
+                <li>Cosplayers must register at the event desk before participating.</li>
+                <li>Costumes should be appropriate and follow the event guidelines.</li>
+                <li>Participants should respect other cosplayers and event attendees.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="event food-stalls-event">
+        <h2>Japanese Food Stalls</h2>
+        <div class="event-details">
+            <p><strong>Date:</strong> October 16, 2023</p>
+            <p><strong>Time:</strong> 12:00 PM - 8:00 PM</p>
+            <p><strong>Rules:</strong></p>
+            <ul>
+                <li>Food purchases should be made with event tokens available at the entrance.</li>
+                <li>No outside food or drinks are allowed.</li>
+                <li>Dispose of trash responsibly in designated bins.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="event weebs-event">
+        <h2>Weebs Poster Making</h2>
+        <div class="event-details">
+            <p><strong>Date:</strong> October 17, 2023</p>
+            <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+            <p><strong>Rules:</strong></p>
+            <ul>
+                <li>Participants should bring their own art supplies.</li>
+                <li>Posters should be related to anime, manga, or Japanese pop culture.</li>
+                <li>Finished posters will be displayed in the event area.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
